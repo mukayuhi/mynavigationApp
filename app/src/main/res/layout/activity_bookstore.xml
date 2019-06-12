@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BOOKSTORE">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOKSTORE"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_below="@id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/olive"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pic"
+        android:layout_marginTop="107dp"
+        android:text="SIGNUP" />
+
+    <Button
+        android:id="@+id/btnlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pic"
+        android:onClick="btnlog"
+        android:layout_marginLeft="197dp"
+        android:layout_marginTop="101dp"
+        android:layout_toRightOf="@id/btnup"
+        android:text="LOGIN" />
+
+
+</RelativeLayout>
